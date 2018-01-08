@@ -1,22 +1,35 @@
 <!DOCTYPE html> <!-- This page also shows what the web page will show  -->
+<center>
+ <style> 
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    display: inline;
+}
+</style>
+<ul>
+    <li><a href="/get_greeting">Home</a></li>
+    <li><a href= "/woodpens">Wood Pens</a></li>
+    <li><a href="/key_chains">Key Chains</a></li>
+    <li><a href= "#Contact"></a></li>
+</ul>  
+<script src= "/js/getdate.js"> 
+</script>
+<br><br><br>
+<p id="date"> </p>
 <html>
 <head>
 <body style= "background-color: lightblue;">
 <link href="<%= url('/css/style.css') %>" rel="stylesheet" type="text/css" />
 <title>Wood turning</title>
+<link href="<%= url('/css/style.css') %>" rel="stylesheet" type="text/css" /> 
 </head>
 </body>
-<center>
-	<div class="dropdown">
-  <button onclick="myFunction()" class="dropbtn">Dropdown</button>
-  <div id="myDropdown" class="dropdown-content">
-   <a href="#">Wood Pens</a>
-    <a href="#">Pen and Pencil</a>
-    <a href="#">Key Chains</a>
-    <a href="#">Pepper Grinders</a>
-    <a href="#">Kitchen Accessories</a>
-  </div>
-</div>
+</style>
 <br><br><br>
 <img src="/img/wood turning.png" alt="Wood Turning" width="206" height="244">
 <h1 style= "color: black; font-size: 250%;">WELCOME!!!</h1>
@@ -25,12 +38,18 @@
 <p style="color: brown;"> Each Wood Pen, Pepper Grinder, and Key Chain are made from West Virginia woods. </p>
 <p style= "color: brown;">They are cut from solid wood and cut into blanks these items are hand turned, sanded, polished and assambled.</p>
 <address style="color:red;">
+
 	Chris Phillips
 	150 Charles Street
 	Ronceverte, WV 24970
 	(304)-524-7927
 	cptp50wv@shentel.net
 </address>
+
 </center>
 </body>
 </html>
+
+<script>
+  window.onload=getOrderDate('date');
+</script>

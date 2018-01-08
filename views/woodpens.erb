@@ -1,21 +1,40 @@
 <!DOCTYPE html> <!-- Lines 1 - 2 tell what type pf document-->
+<center>
 <html>
 <head> <!-- Lines describe the background color of the body a link to the stylesheet and the title -->
+</head> <!-- Lines 7 -8 shows the end of the head and body-->
+<style> 
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    display: inline;
+</style>
+<ul>
+    <li><a href="/get_greeting">Home</a></li>
+    <li><a href= "/woodpens">Wood Pens</a></li>
+    <li><a href="/key_chains">Key Chains</a></li>
+    <li><a href= "#Contact"></a></li>
+</ul>  
   <body style= "background-color: lightblue;">
 <link href="<%= url('/css/style.css') %>" rel="stylesheet" type="text/css" />
-<title>Wood turning</title>
-</head> <!-- Lines 7 -8 shows the end of the head and body -->
+<title>Wood Pens</title>
+<p>7mm wood pens cost is $26.50</p>
+<br>
+<img src="/img/pengold.jpg" alt="Wood Pens" width="200" height="200">
+<img src="/img/pensatingold.jpg" alt="Wood Pens" width="200" height="200">
+<img src="/img/pensatin.jpg" alt="Wood Pens" width="200" height="200">
+<img src="/img/pengunmetal.jpg" alt="Wood Pens" width="200" height="200">
+<img src="/img/penchrome.jpg" alt="Wood Pens" width="200" height="200">
+<br><br><br>
+<img src="/img/pensatinchrome.jpg" alt="Wood Pens" width="200" height="200">
+<img src="/img/pencopper.jpg" alt="Wood Pens" width="200" height="200">
+<br><br>
+<p>8mm wood pens cost is $32.00</p>
+<br>
 </body>
-<center> <!-- This will center the the document itself -->
-	<div class="dropdown"> <!-- Lines 10 - 19 is the creation of dropdown contents for future pages of the web site -->
-  <p><a href="html_images.asp">HTML Images</a></p>
-  <button onclick="myFunction()" class="dropbtn">Dropdown</button>
-  <div id="myDropdown" class="dropdown-content">
-    <a href="#">Wood Pens</a>
-    <a href="#">Pen and Pencil</a>
-    <a href="#">Key Chains</a>
-    <a href="#">Pepper Grinders</a>
-    <a href="#">Kitchen Accessories</a>
-  </div>
-</div>
-<br><br><br> <!-- Line breaks between the dropdown links and the and the main introduction of the page  -->
+</center> <!-- This will center the the document itself -->
+   

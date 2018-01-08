@@ -4,20 +4,18 @@ get '/' do
     erb :get_greeting
 end
 
-get '/base' do
-    erb :base
+get '/get_greeting' do
+	erb :get_greeting
 end
 
-get '/welcome_greeting' do
-    erb :welcome_greeting
+get '/dropdown' do
+	erb :dropdown
 end
 
 get '/woodpens' do
-	erb :woodpens, :local => {:welcome_greeting => welcome_greeting}
+	erb :woodpens
 end
 
-post '/woodpens' do
-	woodpens = params[:woodpens]
-	redirect '/woodpens?welcome_greeting='+ welcome_greeting
+get '/key_chains' do
+	erb :key_chains
 end
-
